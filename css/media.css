@@ -1,0 +1,738 @@
+@media (max-width: 1440px) {
+  .header__link:not(:last-child) {
+    margin-right: 65px;
+  }
+
+  .header__item {
+    margin-right: 55px;
+  }
+
+  .footer__links {
+    margin-right: 0px;
+  }
+
+  .title {
+    font-size: 65px;
+  }
+
+  .hero__descr {
+    font-size: 22px;
+  }
+
+  .about-us__left-descr {
+    margin-right: 25px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .about-us__title-right {
+    line-height: 22px;
+  }
+
+  .about-us__right-descr {
+    line-height: 22px;
+  }
+
+  .about-us__right-cart {
+    padding: 7% 7% 7% 33%;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* global */
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .section {
+    padding-bottom: 80px;
+  }
+
+  /* Header */
+
+  .header {
+    padding: 26px 0;
+  }
+
+  .header__nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 320px;
+    max-width: 420px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    padding: 164px 50px 50px 50px;
+    box-shadow: 0 0 5px #888;
+    background-color: #fff;
+    overflow-y: auto;
+    visibility: hidden;
+    transform: translateX(-120%);
+    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .header__nav .header__list {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .header__nav .header__item {
+    margin-right: 0;
+    align-self: auto;
+  }
+
+  .header__nav .header__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .header__nav .header__link {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0;
+    font-family: "monteserratBold";
+  }
+
+  .header__nav-active {
+    visibility: visible;
+    transform: none;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    color: black;
+    align-self: center;
+  }
+
+  .burger__line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background: currentcolor;
+  }
+
+  .header__burger-active .burger__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header__burger-active .burger__line:first-child {
+    left: -10%;
+    top: 45%;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out,
+      left 0.3s ease-in-out;
+
+    z-index: 1001;
+  }
+
+  .header__burger-active .burger__line:last-child {
+    bottom: auto;
+    left: -10%;
+    top: 45%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out,
+      left 0.3s ease-in-out;
+    z-index: 1001;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  .burger__line:nth-child(1) {
+    top: 3px;
+  }
+
+  .burger__line:nth-child(3) {
+    bottom: 4px;
+  }
+
+  .burger__line:nth-child(2) {
+    top: 48%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .header__logo {
+    max-width: 150px;
+    max-height: 48px;
+  }
+
+  .form {
+    max-width: 410px;
+  }
+
+  /* Hero */
+  .hero__con {
+    background: url(../img/hero__first_1024.jpg) no-repeat transparent;
+    background-size: cover;
+    padding: 160px 15px 45px 77px;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    line-height: 73px;
+    margin-bottom: 16px;
+  }
+
+  .hero__descr {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 660px;
+    margin-bottom: 60px;
+  }
+
+  .hero__button {
+    margin-bottom: 115px;
+  }
+
+  /* about-us */
+
+  .about-us__title {
+    margin-bottom: 10px;
+  }
+
+  .about-us__upper-info {
+    padding-bottom: 62px;
+  }
+
+  .about-us__left-part,
+  .about-us__right-part {
+    width: 100%;
+  }
+
+  .about-us__left-part {
+    margin-right: 0;
+    margin-bottom: 32px;
+    background: url(../img/about-us__bg_1024.jpg) no-repeat transparent;
+    background-size: cover;
+    min-height: 640px;
+  }
+
+  .about-us__other-info {
+    flex-wrap: wrap;
+  }
+
+  .about-us__left-info {
+    width: 100%;
+  }
+
+  .about-us__left-descr {
+    font-size: 16px;
+  }
+
+  .about-us__right-cart {
+    padding: 6.7% 14.1% 6.4% 34.2%;
+  }
+
+  .about-us__right-descr,
+  .about-us__title-right {
+    line-height: 32px;
+  }
+
+  /* stages */
+
+  .stages__list {
+    margin-bottom: 50px;
+  }
+
+  .stages__descr {
+    max-width: 927px;
+    margin-bottom: 23px;
+  }
+
+  .stages__info-descr {
+    margin-right: 48px;
+  }
+
+  .stages__info-title {
+    margin-bottom: 10px;
+  }
+
+  .stages__more {
+    margin-right: 28px;
+  }
+
+  /* accordion */
+
+  .accordion__title {
+    margin-bottom: 35px;
+  }
+
+  .accordion__item-title {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 760px;
+  }
+
+  .accordion__top {
+    padding: 28.6px 0;
+  }
+
+  /* footer */
+
+  .footer__column-descr {
+    display: none;
+  }
+
+  .footer__links {
+    margin-right: 106px;
+  }
+
+  .footer__title {
+    margin-bottom: 26px;
+  }
+
+  .footer__column-center {
+    margin: 0;
+  }
+
+  .footer__form-message {
+    padding-bottom: 7px;
+    margin-bottom: 33px;
+  }
+
+  .footer__btn {
+    padding: 20px 38px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us__right-descr,
+  .about-us__title-right {
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  .header__nav {
+    padding: 144px 50px 50px 50px;
+  }
+
+  /* Hero */
+
+  .hero__title {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__con {
+    padding: 160px 40px 45px 40px;
+  }
+
+  .hero__descr {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /* about-us */
+  .about-us__left-part {
+    min-height: 648px;
+  }
+
+  .about-us__left-info {
+    padding: 33px 40px;
+  }
+
+  .about-us__left-descr {
+    max-width: 365px;
+  }
+
+  .about-us__right-cart {
+    padding: 4.7% 6.1% 4.7% 25.2%;
+    min-height: 0;
+    background-size: 16%;
+  }
+
+  .about-us__right-descr,
+  .about-us__title-right {
+    line-height: 32px;
+  }
+
+  /* stages */
+
+  .stages__list {
+    justify-content: space-between;
+  }
+
+  .stages__info {
+    flex-direction: column-reverse;
+  }
+
+  .stages__img-div,
+  .stages__img-div2,
+  .stages__img-div3,
+  .stages__img-div4 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 284px;
+    margin-bottom: 38px;
+  }
+
+  .stages__info-descr {
+    margin-right: 0;
+  }
+
+  /* accordion */
+
+  .accordion__item-title {
+    max-width: 570px;
+  }
+
+  .accordion__top {
+    padding: 29.4px 0;
+  }
+
+  /* footer */
+
+  .footer__list {
+    flex-direction: column-reverse;
+  }
+
+  .footer__form {
+    max-width: 540px;
+  }
+
+  .footer__column-center {
+    margin-bottom: 50px;
+  }
+
+  .footer__list-links {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .section__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .section {
+    padding-bottom: 60px;
+  }
+
+  .container {
+    padding: 0 15px;
+    max-width: 360px;
+  }
+
+  .header__nav .header__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__nav {
+    padding: 79px 20px 20px 16px;
+  }
+
+  .header__nav .header__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .form {
+    max-width: 260px;
+  }
+
+  .form-btn__submit {
+    margin-right: 10px;
+  }
+
+  .hero__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .hero__descr {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .hero__button {
+    padding: 12.5px 28.5px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .about-us__left-part {
+    margin-right: 0;
+    margin-bottom: 32px;
+    background-size: 290px 200px;
+    background-position: unset;
+    height: 100%;
+    padding-top: 200px;
+    max-width: 100%;
+    align-self: center;
+    background-position-x: 50%;
+    min-height: 370px;
+  }
+
+  .about-us__left-info {
+    flex-direction: column;
+    padding: 0 40px;
+    background: none;
+  }
+
+  .about-us__left-descr {
+    color: black;
+    margin-right: 0;
+  }
+
+  .about-us__button {
+    color: #ff9900;
+  }
+
+  .stages__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .header__logo-img {
+    max-width: 110px;
+    max-height: 35px;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+
+  .hero__con {
+    padding: 60px 24px 15px 24px;
+    text-align: center;
+  }
+
+  .hero__title {
+    margin-bottom: 6px;
+  }
+
+  .hero__descr {
+    margin-bottom: 34px;
+  }
+
+  .hero__button {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 45px;
+  }
+
+  .about-us__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .about-us__title {
+    margin-bottom: 20px;
+  }
+
+  .about-us__upper-info {
+    padding-bottom: 15px;
+  }
+
+  .about-us__left-descr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #333333;
+    font-family: "monteserratmedium";
+    margin-bottom: 10px;
+  }
+
+  .about-us__left-part {
+    padding-top: 207px;
+  }
+
+  .about-us__left-info {
+    padding: 0;
+  }
+
+  .about-us__button {
+    align-self: flex-start;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 42px;
+  }
+
+  .about-us__right-cart {
+    background-position: inherit;
+    background-size: 22%;
+    border: none;
+    padding: 0;
+    padding-top: 21%;
+  }
+
+  .about-us__right-cart h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "monteserratMedium";
+    margin-bottom: 4px;
+  }
+
+  .about-us__right-descr {
+    font-size: 14px;
+    line-height: 28px;
+    font-family: "monteserratRegular";
+  }
+
+  .about-us__rightcart-top {
+    background-image: url(../img/about__svg1_320.jpg);
+  }
+
+  .about-us__rightcart-bottom {
+    background-image: url(../img/about__svg2_320.jpg);
+  }
+
+  .stages__title {
+    margin-bottom: 18px;
+  }
+
+  .stages__btn {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .stages__list {
+    margin-bottom: 15px;
+  }
+
+  .stages__img-div,
+  .stages__img-div2,
+  .stages__img-div3,
+  .stages__img-div4 {
+    min-height: 160px;
+    margin-bottom: 20px;
+  }
+
+  .stages__info-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "monteserratMedium";
+    margin-bottom: 14px;
+  }
+
+  .stages__descr {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: "monteserratRegular";
+  }
+
+  .stages__more {
+    padding: 13px 44px;
+    font-size: 12px;
+    margin-right: 6px;
+    line-height: 15px;
+  }
+
+  .stages__agree {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 11px 31px;
+  }
+
+  .accordion__title {
+    margin-bottom: 18px;
+  }
+
+  .accordion__item-title {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "monteserratmedium";
+    margin-top: -4px;
+  }
+
+  .accordion__btn {
+    transform: scale(0.6);
+  }
+
+  .accordion__top {
+    padding: 30px 0;
+  }
+
+  .accordion__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .footer {
+    padding: 31px 0;
+  }
+
+  .footer__title {
+    margin-bottom: 21px;
+  }
+
+  .footer__form {
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .footer__form-message {
+    margin-bottom: 26px;
+  }
+
+  .footer__btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    align-self: center;
+    padding: 12px 28px;
+  }
+
+  .footer__line {
+    flex-direction: column;
+  }
+
+  .footer__column-center {
+    padding-bottom: 22px;
+    border-bottom: 1px solid #595959;
+    margin: 0;
+  }
+
+  .footer__logo {
+    max-width: 131px;
+    max-height: 42px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer__links {
+    text-align: center;
+    margin: 0;
+    padding: 16px 0;
+  }
+
+  .footer__social-svg {
+    transform: scale(0.7);
+  }
+
+  .footer__social-link:nth-child(2) {
+    margin: 0;
+  }
+
+  .footer__list-social {
+    justify-content: center;
+  }
+}
